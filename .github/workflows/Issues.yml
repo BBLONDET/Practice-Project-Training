@@ -1,0 +1,8 @@
+name: Issues #Workflow name
+on: issues #what action to run the worflow [] for multiple
+jobs: 
+  test: #user set name of job
+    runs-on: ubuntu-latest #runner used for this job
+    steps: #what to run and when
+      - name: Issue triggered 
+        run: echo "${{ toJSON(github) }}"
