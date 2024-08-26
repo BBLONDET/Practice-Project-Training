@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest #runner used for this job
     steps: #what to run and when
       - name: Issue triggered 
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.event) }}"
